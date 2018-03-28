@@ -10,8 +10,19 @@ It contains three packages:
 
 # Dependencies
 
-The packages do not have external dependencies, except packages that can be found in Pharo 7.0.
+*IDRA* does not have external dependencies, except packages that can be found in Pharo 7.0.
 
+On the other hand, **IDRA-TestRunner** depends on **IDRA-MasterWorkerArchitecture**.
+**IDRA-MasterWorkerArchitecture** uses a package called *taskIt* to schedule tasks.
+
+If you wish to load such packages, you need to solve the *taskIt* dependency, install the *taskIt* passage with the following command.
+
+``` 
+  Metacello new
+  baseline: 'TaskIt';
+  repository: 'github://sbragagnolo/taskit';
+  load.
+```
 
 # Setup
 
