@@ -4,7 +4,6 @@ Class {
 	#instVars : [
 		'autoRestart',
 		'debuggerProcess',
-		'restartingVersion',
 		'restartNext',
 		'debugger'
 	],
@@ -76,7 +75,7 @@ IDRAManager >> initialize [
 
 { #category : #'queue-handling' }
 IDRAManager >> processError: aTuple [
-	"This message processes an error tuple"
+	"This message processes an error tuple."
 
 	| currentError context errorVersion |
 	currentError := aTuple first.
