@@ -75,6 +75,7 @@ IDRAMonitor >> connectionTryLimit [
 
 { #category : #'queue-handling' }
 IDRAMonitor >> debugAll: aBoolean [
+
 	debuggingAll := aBoolean.
 ]
 
