@@ -1,6 +1,6 @@
 Class {
 	#name : #BaselineOfIDRA,
-	#superclass : #Object,
+	#superclass : #BaselineOf,
 	#category : #BaselineOfIDRA
 }
 
