@@ -12,13 +12,10 @@ BaselineOfIDRA >> baseline: spec [
 		do: [ spec
 			baseline: 'TaskIt' 
 				with: [ spec repository: 'github://sbragagnolo/taskit' ] ;
-				package: #IDRA;
-				package: #'IDRA-MasterWorkerArchitecture' with: [ spec requires: #('TaskIt' 'IDRA') ];
-				package: #'IDRA-TestRunner' with: [ spec requires: #('IDRA-MasterWorkerArchitecture') ];
-				package: #'TwitterApplication' with: [ spec requires: #('IDRA-MasterWorkerArchitecture') ].
+				package: #IDRA.
 			spec
 				group: 'minimal' with: #('IDRA');
 				group: 'default'
-					with: #('minimal' 'IDRA-MasterWorkerArchitecture' 'IDRA-TestRunner' 'TwitterApplication' ) ].
+					with: #('minimal'  ) ].
 
 ]
